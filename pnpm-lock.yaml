@@ -8,6 +8,9 @@ dependencies:
   '@ark-ui/react':
     specifier: ^2.2.3
     version: 2.2.3(@internationalized/date@3.5.3)(react-dom@18.3.1)(react@18.3.1)
+  '@xstate/vue':
+    specifier: ^3.1.2
+    version: 3.1.2(vue@3.4.26)(xstate@5.12.0)
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(typescript@5.4.5)(vue@3.4.26)
@@ -17,6 +20,9 @@ dependencies:
   vue-router:
     specifier: ^4.3.0
     version: 4.3.2(vue@3.4.26)
+  xstate:
+    specifier: ^5.12.0
+    version: 5.12.0
 
 devDependencies:
   '@rushstack/eslint-patch':
@@ -1518,6 +1524,19 @@ packages:
   /@vue/tsconfig@0.5.1:
     resolution: {integrity: sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==}
     dev: true
+
+  /@xstate/vue@3.1.2(vue@3.4.26)(xstate@5.12.0):
+    resolution: {integrity: sha512-gMr4LPl3jGvnfMTke0AIx74FvErGjtqfUNdExQUda/aL9e7yc5fGSDBFJlVQfR44hd2xmQDZVjqbxadEk8NRXQ==}
+    peerDependencies:
+      vue: ^3.0.0
+      xstate: ^5.11.0
+    peerDependenciesMeta:
+      xstate:
+        optional: true
+    dependencies:
+      vue: 3.4.26(typescript@5.4.5)
+      xstate: 5.12.0
+    dev: false
 
   /@zag-js/accordion@0.38.0:
     resolution: {integrity: sha512-qovoN5KKX8kj5IH9N3r5GUHksL6Xa45YU0fbCeoDeMd/erObRKHoA7bnM+rfJLIKCifzO53ooWWYOVZaXOmT8Q==}
@@ -4700,6 +4719,10 @@ packages:
   /xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
     dev: true
+
+  /xstate@5.12.0:
+    resolution: {integrity: sha512-4W/Hj553mwVnTLQ1itc3rni/cGtM5OkjyavTjaxCelc0ZZKE/ks6tYllc98KbekIoUrEPm4CJH/wTB5p5pPGEw==}
+    dev: false
 
   /yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
