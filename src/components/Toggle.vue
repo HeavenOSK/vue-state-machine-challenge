@@ -1,20 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { toggleMachine } from '@/machines/toggleMachine'
+import { useMachine } from '@zag-js/vue'
 
-const isSelected = ref(false)
-const toggle = () => (isSelected.value = !isSelected.value)
+const [state, send] = useMachine(toggleMachine)
+const isActive = computed(() => {
+  return state.value.value === 'active'
+})
 </script>
 <template>
   <div
-    class="h-8 w-12 bg-green-200 rounded-full shadow-lg relative cursor-pointer"
+    class="h-8 w-12 bg-green-200 rounded-full shadow-lg relative cursor-pointer shadow-green-200"
     :class="{
-      'bg-green-400': isSelected
+      'bg-green-400': isActive
     }"
-    @click="toggle"
+    @click="send('Toggle')"
   >
     <div
       class="h-6 w-6 bg-white transition-transform duration-150 rounded-full absolute top-1 left-1"
-      :class="{ 'translate-x-4': isSelected }"
+      :class="{ 'translate-x-4': isActive }"
     ></div>
   </div>
 </template>
