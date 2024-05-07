@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { toggleMachine } from '@/machines/toggleMachine'
 import { useMachine } from '@zag-js/vue'
+import { toggleMachine } from './Toggle.machine'
 
 const [state, send] = useMachine(toggleMachine)
 const isActive = computed(() => {
