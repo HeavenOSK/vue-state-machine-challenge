@@ -15,8 +15,12 @@ export function connect<T extends PropTypes>(
     },
     rootProps: normalize.button({
       id: dom.getRootId(state.context),
-      'data-active': value ? 'true' : 'false',
-      onClick: () => send({ type: 'VALUE.TOGGLE' })
+      'data-active': !state.context.disabled && (value ? 'true' : 'false'),
+      disabled: state.context.disabled,
+      onClick: () => {
+        if (state.context.disabled) return
+        send({ type: 'VALUE.TOGGLE' })
+      }
     }),
     knobProps: normalize.element({
       id: dom.getKnobId(state.context),

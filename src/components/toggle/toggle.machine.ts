@@ -12,6 +12,7 @@ export function machine(userContext: UserDefinedContext) {
       context: {
         ...ctx,
         value: ctx.value ?? false,
+        disabled: ctx.disabled ?? false,
         onValueChange: ctx.onValueChange
       },
       on: {

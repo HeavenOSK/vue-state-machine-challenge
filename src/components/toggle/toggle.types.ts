@@ -7,6 +7,7 @@ export interface ValueChangeDetails {
 
 interface PublicContext extends CommonProperties {
   value: boolean
+  disabled: boolean
   onValueChange?: (details: ValueChangeDetails) => void
 }
 
