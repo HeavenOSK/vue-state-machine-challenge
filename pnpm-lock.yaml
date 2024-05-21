@@ -8,6 +8,15 @@ dependencies:
   '@zag-js/core':
     specifier: ^0.49.0
     version: 0.49.0
+  '@zag-js/dom-query':
+    specifier: ^0.50.0
+    version: 0.50.0
+  '@zag-js/types':
+    specifier: ^0.50.0
+    version: 0.50.0
+  '@zag-js/utils':
+    specifier: ^0.50.0
+    version: 0.50.0
   '@zag-js/vue':
     specifier: ^0.49.0
     version: 0.49.0(vue@3.4.26)
@@ -2754,7 +2763,7 @@ packages:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.4.26(typescript@5.4.5)
-      vue-component-type-helpers: 2.0.16
+      vue-component-type-helpers: 2.0.19
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3517,6 +3526,10 @@ packages:
       klona: 2.0.6
     dev: false
 
+  /@zag-js/dom-query@0.50.0:
+    resolution: {integrity: sha512-AXTZIpTfCoJZ5+Oj9woSBPKILbrSXpEbXjbBRQ3/JFb+VSbmljNrLpr5OblGEzhVD7enLc+rEmrgGiRC4je6Jg==}
+    dev: false
+
   /@zag-js/store@0.49.0:
     resolution: {integrity: sha512-2TixeTR5rHScj/u0sa5KzYR/rvZePpSErrRBfBSFT7j4+6ktYK+bFWYNVQHHpxMYEBvoprrQkrO1gQB5E2LaQA==}
     dependencies:
@@ -3527,6 +3540,16 @@ packages:
     resolution: {integrity: sha512-hDJG3sF6LXH4C9XFZroJSgeUuSbBAzrxjqEZKs3PG9B4JXjuuZhDW3/Ky12/QTINzomcAae8yfl2CTnuNfcYCA==}
     dependencies:
       csstype: 3.1.3
+    dev: false
+
+  /@zag-js/types@0.50.0:
+    resolution: {integrity: sha512-VhnCunY8Q90vBunOWFJWhXbnJBpY+Z02ahxlbBV5GItsInXkupaR/KKWnBXucHKoIckhxzw8yaoJoT91dOPweQ==}
+    dependencies:
+      csstype: 3.1.3
+    dev: false
+
+  /@zag-js/utils@0.50.0:
+    resolution: {integrity: sha512-eYyDE6aMr90IBF2XNDTu2OsMKNr1AHWV43W6DdDtS/rVIYFd73jqc2hCOaizwLSli1KwdRQObK80URDLIOclcw==}
     dev: false
 
   /@zag-js/vue@0.49.0(vue@3.4.26):
@@ -8499,6 +8522,10 @@ packages:
 
   /vue-component-type-helpers@2.0.16:
     resolution: {integrity: sha512-qisL/iAfdO++7w+SsfYQJVPj6QKvxp4i1MMxvsNO41z/8zu3KuAw9LkhKUfP/kcOWGDxESp+pQObWppXusejCA==}
+    dev: true
+
+  /vue-component-type-helpers@2.0.19:
+    resolution: {integrity: sha512-cN3f1aTxxKo4lzNeQAkVopswuImUrb5Iurll9Gaw5cqpnbTAxtEMM1mgi6ou4X79OCyqYv1U1mzBHJkzmiK82w==}
     dev: true
 
   /vue-demi@0.14.7(vue@3.4.26):

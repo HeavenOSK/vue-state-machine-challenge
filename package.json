@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "@zag-js/core": "^0.49.0",
+    "@zag-js/dom-query": "^0.50.0",
+    "@zag-js/types": "^0.50.0",
+    "@zag-js/utils": "^0.50.0",
     "@zag-js/vue": "^0.49.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",

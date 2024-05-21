@@ -14,8 +14,6 @@ const isActive = computed(() => {
     :class="{
       'bg-green-400': isActive
     }"
-    data-testid="toggle"
-    data-active="true"
     @click="send('Toggle')"
   >
     <div
