@@ -10,10 +10,12 @@ const isActive = computed(() => {
 </script>
 <template>
   <div
-    class="h-8 w-12 bg-green-200 rounded-full shadow-lg relative cursor-pointer shadow-green-200"
+    class="h-8 w-12 bg-green-200 rounded-full shadow-lg relative cursor-pointer shadow-green-200 data-active:bg-blue-500"
     :class="{
       'bg-green-400': isActive
     }"
+    data-testid="toggle"
+    data-active="true"
     @click="send('Toggle')"
   >
     <div
